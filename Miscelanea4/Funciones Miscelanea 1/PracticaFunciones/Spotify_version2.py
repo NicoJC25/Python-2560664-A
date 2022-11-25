@@ -84,7 +84,7 @@ def menor(spotify): #Definimos para buscar la cancion mas corta
 
 while True: #Mientras sea verdad (bucle infinito)
     os.system ("cls") #Creamos un metodo con os para que al hacer cada vuelta, haga un "clear" de la informacion que ya no es necesaria
-    pedir=int(input('Bienvenido al menu \n Presione 1 para agregar una cancion \n Presione 2 para agregar informacion detallada a una cancion ya agregada \n Presione 3 para buscar un artista \n Preione 4 para buscar una cancion \n Presione 5 para eliminar una cancion \n Presione 6 para mostrar todo lo agregado \n Presione 7 para mostrar la cancion mas larga \n Presione 8 para mostrar la cancion mas corta \n Presione 9 para finalizar el programa:\n '))
+    pedir=int(input('Bienvenido al menu \n Presione 1 para agregar una cancion \n Presione 2 para agregar informacion detallada a una cancion ya agregada \n Presione 3 para buscar un artista \n Presione 4 para buscar una cancion \n Presione 5 para eliminar una cancion \n Presione 6 para mostrar todo lo agregado \n Presione 7 para mostrar la cancion mas larga \n Presione 8 para mostrar la cancion mas corta \n Presione 9 para finalizar el programa:\n '))
     #La variable anterior de "pedir" sera in input con un menu que traiga las opciones a elegir para seleccionar que hacer en el programa
     if pedir==1: #Si pedir es igual a 1
         (cancion(spotify)) #Funcion de agregar cancion
