@@ -12,7 +12,8 @@ def llenar_palabra(palabra): #Definimos funcion para poner la palabra
             palabra.append(llenar) #Si no, append que vaya incluyendo cada letra
         if llenar=='': #Si pone un enter sin alguna cosa mas
             palabra.pop(-1) #Va a eliminar ese enter de la lista
-        return palabra #Y retorna
+            break #Break
+    return palabra #Y retorna
 
 
 def buscar_palabra(palabra): #Definimos funcion para buscar la palabra
