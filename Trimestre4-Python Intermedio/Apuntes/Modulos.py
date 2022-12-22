@@ -51,3 +51,8 @@ tres #Aca ya se usa la palabra "tres" en vez de "pi" (tres se vuelve una palabra
 #Nota: Este cambio de nombre no lo hace de forma global en la libreria, solo aplica en el programa que se esta usando -->
 #Por lo cual aun sigue llamandose "pi" en otros programas diferente a ese
 
+#El cambio de nombre tambien aplica para un modulo como tal. Ejemplo:
+
+'''import math as mates
+
+mates.pi'''
