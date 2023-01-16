@@ -6,9 +6,12 @@ print(dir(math))'''
 
 #Tambien se pueden usar ciclos con esta funcion:
 
-import math
+'''import math
 
 for name in dir(math):
-    print(name, end="\t")
+    print(name, end="\t")'''
 
-#Ahora, vamos a ver varios modulos que pueden resultar bastantes utiles en muchos programas.
+#Esta funcion no es muy util realmente en el resultado final de un programa o para su funcion, solo para -->
+#Saber el nombre de las funciones de un modulo aplicado
+
+#Ahora vamos a ver varios modulos utiles que pueden servir para el uso de los programas.
