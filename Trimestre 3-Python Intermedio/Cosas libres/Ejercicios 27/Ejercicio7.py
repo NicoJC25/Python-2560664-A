@@ -1,4 +1,4 @@
-
+'''7. Se necesita un programa que llene una tupla e imprima lo que esta adentro una por una.'''
 
 from random import *
 

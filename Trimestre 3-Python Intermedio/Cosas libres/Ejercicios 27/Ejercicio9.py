@@ -1,3 +1,5 @@
+'''9. Se necesita llenar una temperatura y este muestre si está por encima, abajo o en cero.'''
+
 from random import *
 
 temperatura=list(randrange(-20,30)for i in range(1))

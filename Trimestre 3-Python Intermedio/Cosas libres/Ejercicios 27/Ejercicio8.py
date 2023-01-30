@@ -1,3 +1,5 @@
+'''8. Se requiere un programa que llene un diccionario y muestre sus valores.'''
+
 diccio={'Pollo':'Chicken',
         'Perro':'Dog',
         'Gato':'Cat',
