@@ -19,7 +19,7 @@ for elem in my_tuple: #Imprime cada elemento de la tupla uno por uno
 #CUIDADO: No confundirse intentando modificar la tupla, no se puede usar ni .append, insert, del u otra de estas variables, el programa sacara error
 
 #Se puede usar la variable len(), + para unir tuplas, * para multiplicarlas y los operadores in y not in. Ejemplo:
-'''my_tuple = (1, 10, 100)
+my_tuple = (1, 10, 100)
 t1 = my_tuple + (1000, 10000) #Ejemplo de union de tuplas
 t2 = my_tuple * 3 #Ejemplo de multiplicacion de tuplas
 print(len(t2)) #Longitud de la primera tupla
