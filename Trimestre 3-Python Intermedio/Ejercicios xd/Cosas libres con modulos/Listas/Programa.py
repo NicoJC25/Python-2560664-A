@@ -1,4 +1,4 @@
-from Modulo import *
+from Nicolas import *
 from os import system as interfaz
 lista=lista_random(list)
 

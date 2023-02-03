@@ -33,3 +33,6 @@ def promedio (lista):
     return promedio
 
 
+
+if __name__=='__main__':
+    print('Efectivamente, soy el modulo base :D')   
