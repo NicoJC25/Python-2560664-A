@@ -127,6 +127,7 @@ def buscar_palabra():
         if palabra==p:
             print('La traduccion de la palabra',palabra,'al español, es:',Español[p])
             return None
-        else:
-            print('La palabra no esta en el diccionario')
-            break
+        
+    print('La palabra no esta en el diccionario')
+    return None
+            

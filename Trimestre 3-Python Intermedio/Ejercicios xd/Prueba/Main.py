@@ -1,8 +1,7 @@
 from sys import path as ruta
 from os import system as Interfaz
-ruta.append('G:\Repositorio\Trimestre 3-Python Intermedio\Ejercicios xd\Paquetes')
+ruta.append('E:\Repositorio\Trimestre 3-Python Intermedio\Ejercicios xd\Paquetes') #Ruta absoluta
 
-'''from Idiomas.Traductores.InglesEspañol import buscar_palabra'''
 import Idiomas.Traductores.InglesEspañol as IaE, Idiomas.Traductores.EspañolFrances as EaF, Idiomas.Traductores.EspañolPortugues as EaP, Idiomas.Traductores.EspañolIngles as EaI
 import Idiomas.Tipos_P.TipodePalabra as TipoP
 import Idiomas.Extensiones.ExtensionEsp as ExtEsp, Idiomas.Extensiones.ExtentionIng as ExtIng, Idiomas.Extensiones.ExtensãoPor as ExtPor, Idiomas.Extensiones.ExtensionFra as ExtFra

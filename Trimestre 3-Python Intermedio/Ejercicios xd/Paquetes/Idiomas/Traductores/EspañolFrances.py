@@ -103,8 +103,8 @@ def search_word():
         if word==p:
             print("La traduccion de la palabra",word,"al frances es: ",Frances[p])
             return None
-        else:
-            print('La palabra no esta en el diccionario')
-            break
+    print('La palabra no esta en el diccionario')
+    return None
+            
 
 
