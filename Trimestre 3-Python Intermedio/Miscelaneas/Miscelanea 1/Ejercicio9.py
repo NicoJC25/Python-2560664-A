@@ -6,19 +6,19 @@ def cifrado_j(cad):
         if not i.isalpha(): 
             continue 
         i=i.lower()
-        if i==ord('w'):
+        if ord(i)==ord('w'):
             cifr=ord('a')
-        elif i==ord('x'):
+        elif ord(i)==ord('x'):
             cifr=ord('b')
-        elif i==ord('y'):
-            cifr==ord('c')
-        elif i==ord('z'):
-            cifr==ord('d')
+        elif ord(i)==ord('y'):
+            cifr=ord('c')
+        elif ord(i)==ord('z'):
+            cifr=ord('d')
         else:
             cifr=ord(i)+5
         code+=chr(cifr)
     return(code)
 
-cadena=input('Escriba una frase')
+cadena=input('Escriba una frase: ')
 print('El codigo con el cifrado "J" es:',cifrado_j(cadena))
             
