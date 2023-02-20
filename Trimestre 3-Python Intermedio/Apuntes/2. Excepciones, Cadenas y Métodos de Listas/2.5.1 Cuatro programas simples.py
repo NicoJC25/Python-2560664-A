@@ -64,7 +64,7 @@ Linea 9: Conviertelo en el codigo de la letra Z
 #Este programa, tiene como objetivo que al ingresar varios numeros en forma de cadena, se puedan sumar
 #Ejemplo:
 
-line = input("Ingresa una línea de números, sepáralos con espacios: ")
+'''line = input("Ingresa una línea de números, sepáralos con espacios: ")
 strings = line.split()
 total = 0
 try:
@@ -72,7 +72,7 @@ try:
         total += float(substr)
     print("El total es:", total)
 except:
-    print(substr, "no es un numero.")
+    print(substr, "no es un numero.")'''
 
 
 '''
