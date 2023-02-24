@@ -6,7 +6,6 @@ try:
         interfaz ("cls") 
         print ('Bienvenido al menu \n Presione 1 para agregar una cancion \n Presione 2 para agregar informacion detallada a una cancion ya agregada \n Presione 3 para buscar un artista \n Presione 4 para buscar una cancion \n Presione 5 para eliminar una cancion \n Presione 6 para mostrar todo lo agregado \n Presione 7 para mostrar la cancion mas larga \n Presione 8 para mostrar la cancion mas corta \n Presione 9 para finalizar el programa: ')
         pedir=int(input(' '))
-        
         match pedir:
             case 1: 
                 (cancion(spotify)) 
@@ -32,6 +31,7 @@ try:
                 print('El numero no es valido') 
         interfaz('pause') 
         print('Escoja un numero valido')
-except:
-    print('Ingrese un valor numerico')
+except (TypeError, ValueError ) as e:
+    print(type(e), e)
+    
         #Besto programa in the world <3

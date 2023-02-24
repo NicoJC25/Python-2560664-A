@@ -1,4 +1,3 @@
-'''Ejemplo con el error "BaseException"'''
 
 def base():
     try:
@@ -7,8 +6,10 @@ def base():
         division=pedir/pedir2
     except BaseException:
         print('Lo siento, lo que hiciste no es valido')
+        base()
+    else:
+        print('El resultado de la division es:',division)
+    finally:
+        print('Fin del bloque try')
     
-    
-
-
-
+base()

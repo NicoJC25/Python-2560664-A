@@ -1,5 +1,6 @@
 from random import random as ran, randint as rang, randrange as rang2
 
+
 def lista_random (lista):
     lista=[round(rang2(100))for i in range (rang(10,25))]
     print('Esta es la lista:')
