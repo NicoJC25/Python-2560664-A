@@ -24,14 +24,14 @@ ob.setNombre('Ana')                              #Se ingresara como argumento el
 print(ob.getNombre())                            #...ejecutar la otra funcion y cambiar el nombre.
 #print(type(ob))
 
-class Aprendiz(Persona):
-    def __init__(self,nombre,ficha):
-        Persona.__init__(self,nombre)
-        self.__ficha=ficha
+class Aprendiz(Persona):                         #Nueva sub-clase llamada Aprendiz. Para especificar que es una sub-clase, se pone como parametro la clase a la que pertenece
+    def __init__(self,nombre,ficha):             #Constructor de la sub-clase incluyendo el nombre que viene de la clase principal
+        Persona.__init__(self,nombre)            #Se invoca el constructor de la clase principal ya que es obligatorio
+        self.__ficha=ficha                       #Indica que el metodo self.__ficha tendra el valor de el parametro ingresado en el campo de ficha
 
-    def getFicha(self):
-        return self.__ficha
+    def getFicha(self):                          #Nueva funcion para ver cual es la ficha que se ingreso
+        return self.__ficha                      #Retorna la ficha
 
-app=Aprendiz('Pedro',12345)
-print(app.getFicha())
-print(app.getNombre())
+app=Aprendiz('Pedro',12345)                      #App sera igual a aprendiz donde se ingresa el nombre aunque sea un parametro de persona y el numero de la ficha
+print(app.getFicha())                            #Imprime la funcion de obtener la ficha
+print(app.getNombre())                           #Imprime la funcion de obtener el nombre desde la clase de aprendiz
