@@ -10,6 +10,6 @@ def try_syntax(numerator, denominator):                             #Definimos l
         return result                                               #Retorna el resultado
     finally:                                                        #Esta parte del codigo lo que hace es que, al finalizar el proceso de try, siempre se imprima el mensaje dentro
         print('Exiting')                                            #Imprime "Exiting"
-        #return "Fallo por zero"
-#print(try_syntax(12, 4))
+        #return "Fallo por zero"                                    #Prueba del finally
+#print(try_syntax(12, 4))                                           #Imprime la funcion haciendola funcionar de forma correcta
 print(try_syntax(11, 'a'))                                          #Invoca la funcion

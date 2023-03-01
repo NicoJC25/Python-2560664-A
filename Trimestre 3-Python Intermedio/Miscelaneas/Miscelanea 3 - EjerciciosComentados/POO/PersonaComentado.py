@@ -1,7 +1,7 @@
 class Persona:                                   #Iniciamos una clase llamada "Persona" con la palabra reservada "class"
     def __init__(self,nombre):                   #Definir la funcion constructora. Esta funcion hace que los procesos del objeto sean inicializados y se pueda manipular
         self.__nombre=nombre                     #Indica que el metodo self.__nombre, tendra el valor de el parametro ingresado en el campo de nombre
-        #print('Constructor Activado')           
+        #print('Constructor Activado')           #Si todo sale bien,imprime este mensaje
 
 #Nota: El parametro "self" lo que hace es representar el objeto recien creado. Este parametro puede tener...
 #...cualquier nombre pero se recomienda que sea este mismo ya que asi se puede identificar su funcion.
@@ -22,7 +22,7 @@ ob=Persona('Maria')                              #Ob será igual a la clase pers
 print(ob.getNombre())                            #Imprima el resultado del metodo en la funcion getNombre
 ob.setNombre('Ana')                              #Se ingresara como argumento el nombre Ana para luego...
 print(ob.getNombre())                            #...ejecutar la otra funcion y cambiar el nombre.
-#print(type(ob))
+#print(type(ob))                                 #Imprime el tipo de dato que es ob, en este caso una clase
 
 class Aprendiz(Persona):                         #Nueva sub-clase llamada Aprendiz. Para especificar que es una sub-clase, se pone como parametro la clase a la que pertenece
     def __init__(self,nombre,ficha):             #Constructor de la sub-clase incluyendo el nombre que viene de la clase principal

@@ -2,7 +2,7 @@ def edad():                                                     #Definimos funci
     try:                                                        #Intenta el siguiente bloque de codigo:
         tuedad=int(input("introduce tu edad"))                  #Input donde se ingresa una edad
         print(f'tu edad es  {tuedad}')                          #Se imprime la edad si todo salio bien
-        #print('Tu edad es ',tuedad)
+        #print('Tu edad es ',tuedad)                            #Otra forma de mostrar el print
     except ValueError as e:                                     #Si ocurre un error tipo "ValueError", se va a agregar su informacion de error en la variable e
         print(e)                                                #Se imprime e
         print("La edad debe ser un valor numerico...")          #Otro mensaje acerca de que es lo que se hizo mal

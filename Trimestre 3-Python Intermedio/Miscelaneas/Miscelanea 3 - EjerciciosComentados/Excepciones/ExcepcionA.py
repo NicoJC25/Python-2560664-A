@@ -11,4 +11,4 @@ try:                                                    #Intenta el siguiente bl
 #except (ZeroDivisionError) as e:
 except ZeroDivisionError as zde:                        #ZeroDivisionError va a ser ejecutado como zde
     print(zde)                                          #Imprimimos zde, el mensaje pre establecido de ZeroDivision
-    #print('prueba error')
+    #print('prueba error')                              #Mensaje adicional
