@@ -11,7 +11,7 @@ class Aprendiz:                                                 #Definimos la cl
         self.__cursos=[]                                        #Creamos una lista para agregar los cursos
 
     def agregarCurso(self,nombreCursito):                       #Creamos un metodo para agregar el curso y...
-        cursito=Curso(nombreCursito)                            #... dentro del metodo creamos el objeto el cual sera el curso
+        cursito=Curso(nombreCursito)                            #... dentro del metodo se va a asignar que el curso agregado tambien sera el curso en la clase "Curso"
         self.__cursos.append(cursito)                           #Proceso para agregar el nombre del curso como tal a la lista
 
     def getCursos(self):                                        #Definimos un metodo para obtener el nombre de los cursos
@@ -22,6 +22,7 @@ ap.agregarCurso('Python Basico')                                #Ap hara interac
 ap.agregarCurso('Python Intermedio')                            #... no hay que renombrar mas objetos por fuera
 
 for c in ap.getCursos():                                        #Creamos un bucle for en el que recorrera la lista de cursos...
-    print(c.getTitulo())                                        #... e imprimira uno por uno los cursos agregaods
+    print(c.getTitulo())                                        #... e imprimira uno por uno los cursos agregados desde el titulo de la clase curso
+    
 
 del ap                                                          #Elimina el aprendiz y con el, los cursos
