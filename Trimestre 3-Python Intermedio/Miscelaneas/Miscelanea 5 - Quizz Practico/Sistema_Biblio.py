@@ -20,6 +20,10 @@ class Lector:
     def getNombre(self):
         return self.__nombre
     
+    def setNombre(self, nombre):
+        self.__nombre=nombre
+        return self.__nombre
+    
     def getDireccion(self):
         return self.direccion
     
@@ -51,6 +55,10 @@ class Estudiante(Lector):
     def getCodigo_E(self):
         return self.__codigo_estudiante
     
+    def setCodigo_E(self):
+        self.__codigo_estudiante+=1
+        return self.__codigo_estudiante
+    
     def getAll(self):
         print(Estudiante.getNombre(self), Estudiante.getDireccion(self), Estudiante.getTelefono(self), self.__codigo_estudiante, sep=(', '))
 
@@ -64,7 +72,11 @@ class Docente(Lector):
     
     #def Entregar(self,libro):
     
-    def getCodigoD(self):
+    def getCodigo_D(self):
+        return self.__codigo_docente
+    
+    def setCodigo_D(self):
+        self.__codigo_docente+=1
         return self.__codigo_docente
     
     def getAll(self):
@@ -110,6 +122,10 @@ class Material:
     def getTitulo_M(self):
         return self.__titulo_material
     
+    def setTitulo_M(self, titulo_material):
+        self.__titulo_material=titulo_material
+        return self.__titulo_material
+    
     def getTipo_M(self):
         return self.tipo_material
     
@@ -118,6 +134,10 @@ class Material:
         return self.tipo_material
     
     def getAutor(self):
+        return self.__autor
+    
+    def setAutor(self, autor):
+        self.__autor=autor
         return self.__autor
     
     def getAll(self):
@@ -144,11 +164,15 @@ class Libro(Material):
     def getCodigo_L(self):
         return self.__codigo_L
     
+    def setCodigo_L(self):
+        self.__codigo_L+=1
+        return self.__codigo_L
+    
     def getAll(self):
         print(Material.getTitulo_M(self), Material.getTipo_M(self), Material.getAutor(self), self.editorial, self.__codigo_L, sep=(', '))
         
         
-class Revista:
+class Revista(Material):
     def __init__ (self, titulo_material, tipo_material, autor, edicion, codigo_R):
         Material.__init__(self, titulo_material, tipo_material, autor)
         self.edicion=edicion
@@ -166,6 +190,10 @@ class Revista:
         return self.edicion
     
     def getCodigo_R(self):
+        return self.__codigo_R
+    
+    def setCodigo_R(self):
+        self.__codigo_R+=1
         return self.__codigo_R
     
     def getAll(self):
