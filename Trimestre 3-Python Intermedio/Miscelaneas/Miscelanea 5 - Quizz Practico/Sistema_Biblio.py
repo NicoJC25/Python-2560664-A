@@ -6,11 +6,12 @@ class Lector:
         self.__pedido=''
         
     def agregarPedido(self,ID_usuario,Titulo_m,Codigo_m):
-        Ped=str(Pedido(ID_usuario,Titulo_m,Codigo_m))
-        self.__pedido+=Ped
+        Ped=Pedido(ID_usuario,Titulo_m,Codigo_m)
+        Ped2=str(Ped.getID_U()),Ped.getTitulo_M(),str(Ped.getCodigo_M())
+        self.__pedido=Ped2
         
     def getPedido(self):
-        return self.__pedido
+        print (self.__pedido)
     
     #def Reservar(self,material):
     
@@ -199,7 +200,7 @@ Biblio=Bibliotecario('Pedro',1)
 est.getAll()
 doc.getAll()
 lec.agregarPedido(est.getCodigo_E(),lib.getTitulo_M(), lib.getCodigo_L())
-print(lec.getPedido())
+lec.getPedido()
 lib.getAll()
 rev.getAll()
 print(Biblio.getID_P())
