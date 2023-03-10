@@ -12,11 +12,7 @@ class Lector:
         
     def getPedido(self):
         print (self.__pedido)
-    
-    #def Reservar(self,material):
-    
-    #def Entregar(self,material):
-    
+        
     def getNombre(self):
         return self.__nombre
     
@@ -48,10 +44,6 @@ class Estudiante(Lector):
         Lector.__init__(self, nombre, direccion, telefono)
         self.__codigo_estudiante=codigo_estudiante
         
-    #def Reservar(self,libro):
-    
-    #def Entregar (self,libro):
-    
     def getCodigo_E(self):
         return self.__codigo_estudiante
     
@@ -68,10 +60,6 @@ class Docente(Lector):
         Lector.__init__(self, nombre, direccion, telefono)
         self.__codigo_docente=codigo_docente
         
-    #def Reservar(self,libro):
-    
-    #def Entregar(self,libro):
-    
     def getCodigo_D(self):
         return self.__codigo_docente
     
@@ -89,10 +77,6 @@ class Pedido:
         self.titulo_material=titulo_material
         self.__codigo_material=codigo_material
         
-    #def Reservar(self, fecha):
-    
-    #def Entregar(self, fecha):
-    
     def getID_U(self):
         return self.__ID_usuario
     
@@ -150,10 +134,6 @@ class Libro(Material):
         self.editorial=editorial
         self.__codigo_L=codigo_L
         
-    #def Reservar(self, fecha):
-    
-    #def Entregar(self, fecha):
-    
     def getEditorial(self):
         return self.editorial
     
@@ -178,10 +158,6 @@ class Revista(Material):
         self.edicion=edicion
         self.__codigo_R=codigo_R
         
-    #def Reservar(self, fecha):
-    
-    #def Entregar(self, fecha):
-    
     def getEdicion(self):
         return self.edicion
     
@@ -205,10 +181,6 @@ class Bibliotecario:
         self.__ID_personal=ID_personal
         self.__nombre=nombre
         
-    #def Reservar(self, libro):
-    
-    #def Entregar(self, libro):
-    
     def getNombre(self):
         return self.__nombre
     
@@ -223,12 +195,3 @@ doc=Docente('Pablo','Calle 80A',34535322,1)
 lib=Libro('Pepe el grillo','Infantil','Pepe','Atenea',1)
 rev=Revista('51 minutos','Moda','Pepe','Quinta',1)
 Biblio=Bibliotecario('Pedro',1)
-
-
-est.getAll()
-doc.getAll()
-lec.agregarPedido(est.getCodigo_E(),lib.getTitulo_M(), lib.getCodigo_L())
-lec.getPedido()
-lib.getAll()
-rev.getAll()
-print(Biblio.getID_P())
