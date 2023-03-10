@@ -1,0 +1,13 @@
+flujo=open('Archivos/inicio.txt','a')          #La variable flujo va a usar una funcion llamada "open" para abrir un flujo en especifico...
+#... en este caso, entre los parentesis se pone la ruta en la que va el archivo que se quiere inicializar.
+#Al estar ambos archivos en la misma carpeta, se emplea el uso de la ruta relativa colocando el nombre de la carpeta en la que estan...
+#... ambos archivos y luego un slash o barra diagonal seguido del nombre del archivo.
+#Luego va una coma seguida de un str "a", esto lo que hace es que para esta funcion, Python trae implementadas varias palabras para...
+#... indicar que se va a hacer con el archivo invocado, entonces esta a lo que hace es que se abrira en modo adjuntar...
+#... por lo cual, el archivo no necesariamente tiene que ser creado ya que si no esta, el mismo lenguaje lo crea.
+
+#datos=flujo.read()
+#print(datos)
+flujo.write('\nCuando estudian con juicio')
+datos=flujo.read()
+print(datos)
