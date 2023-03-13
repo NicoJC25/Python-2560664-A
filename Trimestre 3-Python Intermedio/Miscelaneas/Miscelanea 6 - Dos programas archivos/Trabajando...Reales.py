@@ -1,56 +1,5 @@
 from os import strerror
 
-try:
-    cont_letra= cont_linea=0
-    stream = open("G:\Repositorio-Python\Trimestre 3-Python Intermedio\Miscelaneas\Miscelanea 6 - Dos programas archivos\Archivo.txt", 'rt', encoding='utf-8') #UTF-8 para especificar el idioma
-    '''letra=stream.read()   #Se puede poner tanto con o sin argumentos'''
-    '''linea=stream.readline()'''
-    lineas=stream.readlines(5)   #Se especifica la cantidad por si el archivo es grande
-    while len(lineas) != 0:
-        for linea in lineas:
-            cont_linea += 1
-            for letra in linea:
-                print(letra, end='')
-                cont_letra+= 1
-        lineas = stream.readlines(5)
-    stream.close()
-    print("\nCaracteres en el archivo:", cont_letra)
-    print("Líneas en el archivo:", cont_linea)
-except IOError as e:
-    print("Se produjo un error :/:", strerror(e.errno))
-
-
-
-'''from os import strerror
-
-data = bytearray(10)
-
-for i in range(len(data)):
-    data[i] = 10 + i
-
-try:
-    binary_file = open('file.bin', 'wb')
-    binary_file.write(data)
-    binary_file.close()
-except IOError as e:
-    print("Se produjo un error de E/S:", strerror(e.errno))
-
-from os import strerror
-
-data = bytearray(10)
-
-try:
-    binary_file = open('file.bin', 'rb')
-    binary_file.readinto(data)
-    binary_file.close()
-
-    for b in data:
-        print(hex(b), end=' ')
-except IOError as e:
-print("Se produjo un error de E/S:", strerror(e.errno))'''
-
-from os import strerror
-
 nombre_archivo_fuente = input("Ingresa el texto del archivo fuente: ")
 try:
     archivo_fuente = open('G:\Repositorio-Python\Trimestre 3-Python Intermedio\Miscelaneas\Miscelanea 6 - Dos programas archivos/Archivo_fuente', 'a')
