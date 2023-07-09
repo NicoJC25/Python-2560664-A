@@ -11,4 +11,7 @@ def attribute(cad):
         print('Algo ocurrió')
 
 
-attribute(cad=('Hola me llamo Pedro'))
+attribute(cad=('Hola me llamo Pedro')) 
+
+if 1 == 2:
+    print('Hola')
