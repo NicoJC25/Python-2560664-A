@@ -13,5 +13,3 @@ def attribute(cad):
 
 attribute(cad=('Hola me llamo Pedro')) 
 
-if 1 == 2:
-    print('Hola')
